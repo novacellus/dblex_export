@@ -1,0 +1,12 @@
+{
+  "entry": {
+    "id_column": "entry_id",
+    "columns": [
+      "entry_type", 
+      "entry_n", 
+      "empty_lbl", 
+      "lemma", 
+      "orth"
+    ]
+  }
+}

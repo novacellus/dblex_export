@@ -1,0 +1,35 @@
+{
+  "sense": {
+    "id_column": "sense_id",
+    "columns": [
+      "sense_n", 
+      "sense_id", 
+      "parent_sense_id", 
+      "parent_sense_collocs", 
+      "parent_sense_usg", 
+      "parent_sense_gram", 
+      "entry_id"
+    ],
+    "relationships": {
+      "entry_id": {
+        "relationship_name": "belongs_to_entry"
+      },
+      "parent_sense_id": {
+        "relationship_name": "has_parent_sense"
+      }
+    }
+  },
+  "definition": {
+    "id_column": "def_id",
+    "columns": [
+      "def_id", 
+      "def"
+    ],
+    "relationships": {
+      "sense_id": {
+        "relationship_name": "defines",
+        "parent_entity_type": "sense"
+      }
+    }
+  }
+}
